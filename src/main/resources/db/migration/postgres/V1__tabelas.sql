@@ -1,12 +1,8 @@
-CREATE​ TABLE​ `empresa` (
-`id` bigint(20) NOT​ NULL​,
-`cnpj` varchar(255) NOT​ NULL​,
-`data_atualizacao` datetime NOT​ NULL​,
-`data_criacao` datetime NOT​ NULL​,
-`razao_social` varchar(255) NOT​ NULL
-) ENGINE=InnoDB DEFAULT​ CHARSET=utf8;
-
-ALTER​ TABLE​ `empresa`
-ADD​ PRIMARY​ KEY​ (`id`);
-ALTER​ TABLE​ `empresa`
-MODIFY​ `id` bigint(20) NOT​ NULL​ AUTO_INCREMENT;
+create table empresa (
+        id int8 not null,
+        cnpj varchar(255) not null,
+        data_atualizacao timestamp not null,
+        data_criacao timestamp not null,
+        razao_social varchar(255) not null,
+        primary key (id)
+    )
